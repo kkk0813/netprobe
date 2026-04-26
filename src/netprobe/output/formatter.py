@@ -24,31 +24,31 @@ VOCAB: dict[str, tuple[str, str]] = {
     "filtered":            ("filtered",                "lowkey sus"),
 
     # scan lifecycle
-    "scanning":            ("Scanning",                "interrogating"),
-    "scan_complete":       ("Scan complete",           "mission accomplished bestie"),
-    "scan_start":          ("Starting scan on",        "snitching on"),
-    "no_open_ports":       ("No open ports found",     "bro is in full lockdown mode"),
+    "scanning":            ("Scanning",                "Interrogating"),
+    "scan_complete":       ("Scan complete",           "Mission accomplished bestie"),
+    "scan_start":          ("Starting scan on",        "Snitching on"),
+    "no_open_ports":       ("No open ports found",     "Bro is in full lockdown mode"),
 
     # sniffer lifecycle
-    "sniffing":            ("Sniffing on",             "eavesdropping on"),
-    "sniff_start":         ("Listening on interface",  "wiretapping"),
-    "packet_captured":     ("Packet captured",         "caught in 4k"),
-    "sniff_stopped":       ("Capture stopped",         "ok we're done being nosy"),
+    "sniffing":            ("Sniffing on",             "Eavesdropping on"),
+    "sniff_start":         ("Listening on interface",  "Wiretapping"),
+    "packet_captured":     ("Packet captured",         "Caught in 4k"),
+    "sniff_stopped":       ("Capture stopped",         "Ok we're done being nosy"),
 
     # errors
-    "err_invalid_target":  ("Invalid target address",  "bro typed a fake IP"),
-    "err_invalid_ports":   ("Invalid port range",      "those port numbers are not it chief"),
-    "err_timeout":         ("Connection timed out",    "left on read"),
-    "err_permission":      ("Permission denied — try running with sudo", "ur not built for this (try sudo)"),
+    "err_invalid_target":  ("Invalid target address",  "Bro typed a fake IP"),
+    "err_invalid_ports":   ("Invalid port range",      "Those port numbers are not it chief"),
+    "err_timeout":         ("Connection timed out",    "Left on read"),
+    "err_permission":      ("Permission denied — try running with sudo", "Ur not built for this (try sudo)"),
 
     # generic
-    "target":              ("Target",                  "victim"),
-    "ports":               ("Ports",                   "doors we're knocking on"),
-    "timeout":             ("Timeout",                 "ghosting threshold"),
-    "interface":           ("Interface",               "the wire we're tapping"),
-    "filter":              ("Filter",                  "vibe check"),
-    "duration":            ("Duration",                "time spent being unethical"),
-    "summary":             ("Summary",                 "the tea"),
+    "target":              ("Target",                  "Victim"),
+    "ports":               ("Ports",                   "Doors we're knocking on"),
+    "timeout":             ("Timeout",                 "Ghosting threshold"),
+    "interface":           ("Interface",               "The wire we're tapping"),
+    "filter":              ("Filter",                  "Vibe check"),
+    "duration":            ("Duration",                "Time spent being unethical"),
+    "summary":             ("Summary",                 "The tea"),
 }
 
 # ---------------------------------------------------------------------------

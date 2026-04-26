@@ -17,12 +17,7 @@ from netprobe.sniffer import run_sniff
 # Root group — injects unhinged flag into ctx.obj for all subcommands
 # ---------------------------------------------------------------------------
 @click.group()
-@click.option(
-    "--unhinged",
-    is_flag=True,
-    default=False,
-    help="Switch from professional to peak brainrot output.",
-)
+@click.option("--unhinged", is_flag=True, default=False, help="Switch from professional to peak brainrot output.",)
 @click.version_option(version="0.1.0", prog_name="netprobe")
 @click.pass_context
 def main(ctx: click.Context, unhinged: bool) -> None:
@@ -39,7 +34,7 @@ def main(ctx: click.Context, unhinged: bool) -> None:
 @main.command()
 @click.option("--target", "-t", required=True,      help="Target IP or hostname.")
 @click.option("--ports",  "-p", default="1-1024",   show_default=True, help="Port range, e.g. 1-1024 or 22,80,443.")
-@click.option("--timeout",      default=1.0,         show_default=True, type=float, help="Connection timeout in seconds.")
+@click.option("--timeout",      default=1.0,        show_default=True, type=float, help="Connection timeout in seconds.")
 @click.option("--output", "-o", type=click.Choice(["table", "json"]), default="table", show_default=True)
 @click.pass_context
 def scan(ctx: click.Context, target: str, ports: str, timeout: float, output: str) -> None:
@@ -48,7 +43,7 @@ def scan(ctx: click.Context, target: str, ports: str, timeout: float, output: st
     console  = make_console(unhinged)
 
     console.print(f"\n[label]{term('scan_start', unhinged)}[/label] [value]{target}[/value]")
-    console.print(f"  [label]{term('ports', unhinged)}  :[/label] [value]{ports}[/value]")
+    console.print(f"  [label]{term('ports', unhinged)}:[/label] [value]{ports}[/value]")
     console.print(f"  [label]{term('timeout', unhinged)}:[/label] [value]{timeout}s[/value]\n")
 
     run_scan(target=target, ports=ports, timeout=timeout, output_format=output, unhinged=unhinged)
